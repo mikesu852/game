@@ -5,6 +5,7 @@
     <tr>
       <th>#</th>
       <th>Email</th>
+      <th>權限</th>
       <th>功能</th>
     </tr>
   </thead>
@@ -15,10 +16,17 @@
           <%= user.id %>
         </td>
         <td>
-          <%= user.email %>
+          <%= link_to(user.email, "/user/" + user.id.to_s) %>
         </td>
         <td>
-          <%= link_to("編輯", "/user/" + user.id.to_s) %>
+          <% if user.admin? %>
+            管理員
+          <% else %>
+            註冊玩家
+          <% end %>
+        </td>
+        <td>
+          <%= link_to("查看照片", "/user/" + user.id.to_s) %>
         </td>
       </tr>
     <% end %>

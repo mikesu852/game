@@ -16,8 +16,6 @@
           <% if @user.admin? %>
             <li> <%= link_to("進入後台管理", "/admin/users") %> </li>
           <% end %>
-
-          <li> <%= link_to("CU_ID : " + @cu_id.to_s, "/") %> </li>
         <% else %>
           <li> <%= link_to("註冊帳號", "/users/sign_up") %> </li>
         <% end %>
