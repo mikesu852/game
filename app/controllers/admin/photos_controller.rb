@@ -1,4 +1,4 @@
-class Admin::UsersController < ApplicationController
+class Admin::PhotosController < ApplicationController
   layout "admin"
 
   before_action :authenticate_user!
@@ -6,10 +6,6 @@ class Admin::UsersController < ApplicationController
 
   def index
       @users = User.all
-  end
-
-  def show
-    @user = User.find(params[:id])
   end
 
   def to_admin
@@ -26,10 +22,7 @@ class Admin::UsersController < ApplicationController
     redirect_to admin_users_path
   end
 
-  def destroy                       # destroy 要拼對
-    @user = User.find(params[:id])  # 指定要刪除的 user
-    @user.destroy                   # 刪除
-
-    redirect_to admin_users_path    # 導回管理權限頁面
+  def destory
+    @user.destory
   end
 end

@@ -1,0 +1,21 @@
+<%= form_for @photo, :html => {:multipart => false} do |f| %>
+　<%= f.input :pic1 %> <!-- 上傳 -->
+　<%= f.check_box :remove_image %> <!-- 刪除 -->
+　<%= f.hidden_field :image_cache %> <!-- 快取 _cache (讓填表時若有誤，不用重新選擇圖片) -->
+　<%= image_tag @user.pic1 if @user.pic1? %> <!-- 如果 user 已有圖片的話，就顯示 -->
+<% end %>
+
+
+
+<div class="row">
+  <% @locations.each do |element| %>
+    <div class="col-xs-6 col-md-3">
+      <p><%= element %></p>
+      <% if @user.photo.pic1.present? %>
+        <%= image_tag(@user.photo.pic1.thumb.url, class: "thumbnail") %>
+      <% else %>
+        <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

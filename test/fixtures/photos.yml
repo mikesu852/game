@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  pic1: MyString
+  pic2: MyString
+  pic3: MyString
+  pic4: MyString
+  pic5: MyString
+  pic6: MyString
+  pic7: MyString
+  pic8: MyString
+  pic9: MyString
+  pic10: MyString
+  pic11: MyString
+  pic12: MyString
+  pic13: MyString
+  pic14: MyString
+  pic15: MyString
+  pic16: MyString
+  pic17: MyString
+  pic18: MyString
+  pic19: MyString
+  pic20: MyString
+  pic21: MyString
+  pic22: MyString
+  pic23: MyString
+  pic24: MyString
+  pic25: MyString
+
+two:
+  user_id: 1
+  pic1: MyString
+  pic2: MyString
+  pic3: MyString
+  pic4: MyString
+  pic5: MyString
+  pic6: MyString
+  pic7: MyString
+  pic8: MyString
+  pic9: MyString
+  pic10: MyString
+  pic11: MyString
+  pic12: MyString
+  pic13: MyString
+  pic14: MyString
+  pic15: MyString
+  pic16: MyString
+  pic17: MyString
+  pic18: MyString
+  pic19: MyString
+  pic20: MyString
+  pic21: MyString
+  pic22: MyString
+  pic23: MyString
+  pic24: MyString
+  pic25: MyString

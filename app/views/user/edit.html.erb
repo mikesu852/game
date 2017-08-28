@@ -1,0 +1,565 @@
+<h4 style="text-align: center;">請上傳正方形的照片，或者由系統自動裁切～</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><h3>地點</h3></th>
+      <th><h3>狀態</h3></th>
+      <th><h3>上傳</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          <h4>01 七股鹽山</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic1.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>
+                <%= c.input :pic1 , as: :file, label: false, wrapper_html: {class: "form-inline"} %>
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>02 安平夕遊出張所</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic2.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic2 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>03 安平樹屋</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic3.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic3 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>04 安平劍獅</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic4.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic4 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>05 重道崇文坊</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic5.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic5 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>06 神農街</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic6.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic6 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>07 水仙宮市場</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic7.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic7 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>08 赤崁樓</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic8.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic8 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>09 陳德聚堂</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic9.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic9 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>10 天壇</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic10.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic10 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>11 測候所</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic11.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic11 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>12 吳園</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic12.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic12 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>13 青年路城隍廟</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic13.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic13 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>14 知事官邸</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic14.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic14 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>15 保安路</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic15.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic15 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>16 南廠保安宮</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic16.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic16 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>17 國華街</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic17.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic17 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>18 原台南地方法院</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic18.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic18 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>19 林百貨</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic19.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic19 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+      <tr>
+        <td>
+          <h4>20 葉石濤文學紀念館</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic20.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic20 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>21 台灣文學館</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic21.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic21 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>22 孔廟</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic22.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic22 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>23 大東夜市</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic23.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic23 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>24 巴克禮公園</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic24.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic24 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>25 虎山國小</h4>
+        </td>
+        <td>
+          <% if @user.photo.pic25.present? %>
+            <h4 style="color: green;">已上傳照片</h4>
+          <% else %>
+            <h4 style="color: red;">尚未上傳照片</h4>
+          <% end %>
+        </td>
+        <td>
+          <%= simple_form_for @user do |f| %>              <!-- @user -->
+            <div class="form-group">
+              <%= f.simple_fields_for :photo do |c| %>      <!-- @user.photo -->
+                <%= c.input :pic25 , as: :file, label: false %>            <!-- @user.photo.pic1 -->
+              <% end %>
+            </div>
+          <%= f.submit "上傳", class: "btn btn-primary btn-sm", data: { disable_with: "上傳中..." } %>
+          <% end %>
+        </td>
+      </tr>
+
+  </tbody>
+</table>

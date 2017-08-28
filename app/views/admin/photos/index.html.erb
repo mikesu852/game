@@ -1,0 +1,26 @@
+<h2>管理照片</h2><br />
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Email</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= user.id %>
+        </td>
+        <td>
+          <%= user.email %>
+        </td>
+        <td>
+          <%= link_to("編輯", "/user/" + user.id.to_s) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

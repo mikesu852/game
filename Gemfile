@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -37,6 +37,16 @@ gem 'jbuilder', '~> 2.5'
 
 # Use devise for member system
 gem "devise"
+# Use bootstrap-sass
+gem "bootstrap-sass"
+# Use font awesome
+gem "font-awesome-rails"
+# Use carrierwave
+gem 'carrierwave'
+# Use mini_magick
+gem "mini_magick"
+# Use simple_form
+gem "simple_form"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,6 +61,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+group :production do
++   gem "pg"
++   gem "rails_12factor"
++ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

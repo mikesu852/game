@@ -1,4 +1,4 @@
-<h2>使用者列表</h2>
+<h2>管理權限</h2><br />
 
 <table class="table table-bordered">
   <thead>
@@ -16,13 +16,23 @@
           <%= user.id %>
         </td>
         <td>
-          <%= user.email %>
+          <!-- <%= user.email %> -->
+          <%= link_to(user.email, "/admin/users/" + user.id.to_s) %>
         </td>
         <td>
-          權限 (待處理)
+          <% if user.admin? %>
+            管理員
+          <% else %>
+            註冊玩家
+          <% end %>
         </td>
         <td>
-          轉換權限的按鈕 (待處理)
+          <% if user.admin? %>
+            <%= link_to("移除管理權限", to_normal_admin_user_path(user), method: :post, class: "btn btn-warning") %>
+          <% else %>
+            <%= link_to("設定為管理員", to_admin_admin_user_path(user), method: :post, class: "btn btn-primary") %>
+            <%= link_to("移除帳號", "/admin/users/" + user.id.to_s, method: :delete, class: "btn btn-danger", data: { confirm: '警告：確定刪除？' }) %>
+          <% end %>
         </td>
       </tr>
     <% end %>

@@ -1,0 +1,28 @@
+<h2>顯示單筆使用者資料</h2>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Email</th>
+      <th>權限</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>
+          <%= @user.id %>
+        </td>
+        <td>
+          <%= @user.email %>
+        </td>
+        <td>
+          <% if @user.admin? %>
+            管理員
+          <% else %>
+            遊戲玩家
+          <% end %>
+        </td>
+      </tr>
+  </tbody>
+</table>
