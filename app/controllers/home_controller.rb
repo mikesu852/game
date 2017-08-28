@@ -8,7 +8,7 @@ class HomeController < ApplicationController
 
       @cu_path = (Rails.public_path.to_s + "/photos")
       @cu_path = @cu_path + '/' + @cu_id.to_s
-      Dir.mkdir(@cu_path) unless File.exists?(@cu_path)
+      #Dir.mkdir(@cu_path) unless File.exists?(@cu_path)
 
       @user = User.find(@cu_id)
     end
