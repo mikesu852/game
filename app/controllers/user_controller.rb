@@ -6,6 +6,14 @@ class UserController < ApplicationController
   def show                                   # 顯示單筆 Product 資料/頁面 (amdin/products/1)
     @cu_id = current_user.id
     @user = User.find(params[:id])           # 指定某一筆 Product 資料
+
+    if @user.photo.present?                  # 如果沒有 Product 圖片就 build 關連表單 photo
+        @photo = @user.photo
+      else
+        @photo = @user.build_photo
+        #@photo.cu_id = @cu_id                # 把 CUID 丟進去 (測試用)
+        #@photo.save                          # 寫入 date 到資料庫
+    end
   end
 
   def edit
