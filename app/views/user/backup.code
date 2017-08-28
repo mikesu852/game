@@ -19,3 +19,39 @@
     </div>
   <% end %>
 </div>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>地點</th>
+      <th>照片</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for index in 1..25 do %>
+      <tr>
+        <td>
+          <% if index < 10 %>
+            <%= "0" + index.to_s %>
+          <% else %>
+            <%= index %>
+          <% end %>
+        </td>
+        <td>
+          <%= @locations[index-1] %>
+        </td>
+        <td>
+            <% if @user.photo.pic1.present? %>
+              <%= image_tag(@user.photo.pic1.thumb.url, class: "thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+            <% end %>
+        </td>
+        <td>新增 | 修改 | 刪除</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
