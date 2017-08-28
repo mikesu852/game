@@ -27,5 +27,5 @@ class Photo < ApplicationRecord
   mount_uploader :pic23, ImageUploader
   mount_uploader :pic24, ImageUploader
   mount_uploader :pic25, ImageUploader
-  mount_uploader :image, ImageUploader, :mount_on => :image
+  #mount_uploader :image, ImageUploader
 end
