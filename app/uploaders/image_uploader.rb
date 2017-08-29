@@ -6,7 +6,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   def extension_white_list
     #%w(jpg jpeg gif png)
-    %w(jpg jpeg png)
+    %w(jpg jpeg)
   end
 
   # Choose what kind of storage to use for this uploader:
