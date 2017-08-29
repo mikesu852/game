@@ -47,6 +47,10 @@ gem 'carrierwave'
 gem "mini_magick"
 # Use simple_form
 gem "simple_form"
+gem "fog"
+gem 'fog-aws'
+
+gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -64,8 +68,9 @@ group :development do
 end
 
 group :production do
-  gem "pg"
+  #gem "pg"
   #gem "rails_12factor"
+  gem "mysql2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
