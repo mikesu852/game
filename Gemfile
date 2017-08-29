@@ -49,6 +49,7 @@ gem "mini_magick"
 gem "simple_form"
 gem "fog"
 gem 'fog-aws'
+gem 'carrierwave-google-storage'
 
 gem 'therubyracer', platforms: :ruby
 

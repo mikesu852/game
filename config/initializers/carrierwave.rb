@@ -3,13 +3,17 @@
 #   config.validate_remote_net_url_format = false # this is important
 
 CarrierWave.configure do |config|
-config.fog_credentials = {
+  config.storage                             = :gcloud
+  config.gcloud_bucket                       = 'tainangame'
+  config.gcloud_bucket_is_public             = true
+  config.gcloud_authenticated_url_expiration = 600
 
-    :provider                         => 'Google',
-    :google_storage_access_key_id     => Rails.application.secrets.google_storage_access_key_id,
-    :google_storage_secret_access_key => Rails.application.secrets.google_storage_secret_access_key
+  config.gcloud_attributes = {
+    expires: 600
+  }
 
-    }
-
-    config.fog_directory = 'tainangame'
+  config.gcloud_credentials = {
+    gcloud_project: 'game-178317',
+    gcloud_keyfile: '/game/config/gcloud/game-428b42d19cbf.json'
+  }
 end

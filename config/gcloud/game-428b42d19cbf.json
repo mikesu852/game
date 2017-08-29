@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "game-178317",
+  "private_key_id": "428b42d19cbf5c4e3cced09fd6b69fc6990f8d26",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrqRxuLWBKcghA\nAAEXheuLFEKd7AJtXtxh1/+fCpepANl4PoDwRUBaROlZmElXQPrpJVxv0jzZQLUy\nhvNb2NPTOeSn1vlWX/OFPHCx33BTblR8Stj1QzAM/mAcwcqh4+lPEVO49gu2KZND\nR3VVxD911dzBkNxKmho/mhvYoBERAO79OvtjFQos4l0L5syftSlTf/pIlSVxW4CV\ntjYJ7YSFUobqT0Aw4ZAhtM6YuBZUSZEFNlkWOIf5Fo00s0JdegBO8t8e0HnDn4rn\nnr2ZX0Y2j7ywc4U4KdOR90WBLkJmtvnIkk0PfQvojovfUBVR4kG0lAcU9bv4/4pX\n6l44g5XtAgMBAAECggEAJKSBLp2eB9Ymn67AjOpn2LTW8YnvDLSqm3I1nRfwPsGx\nKkNBV8iYj4xVOWxR/3+d78WrYS1CEugGpcX7zbfPo6+geRlg+QibXW4E6ls1SYHs\nI+oAPP5+E8/66TiOzhbt9xROSFWxM03Vow9uYwP0ve0MZf9LntsdTkVRu2CTtAqi\nNPcE5U3YQnFgAjONX+iOJkZs5NEkuwPe1SgiJV68L5I1IOVGVhADFzuUeoCD3YHT\nOLzAStyLGX8nWw5YmJ+gTRzaHLFNaPf0TIeFM16Urw4bacSQtt5ivqqn0gfV2M4m\nzds8U9wPVFrhLBYv/YtTsgUizYLGR25oHV8+WczF2wKBgQDu/l7az4S89irUmZ0w\n1K/6DfYdoFQsDSwKZ3oDeEum7YF5ewst0kT63QNxLKxkcC0sZ+s+jxdT0fNa5FI3\nd+c1sLJ19Ih4PiXOhzYt3RZwXPIdXndDCIoXWYiYpOq/lE6dTgiitBWT0wN4dYJ6\nRpK2T5zUkFbgLt+cYLJ/eG5CAwKBgQC34CrmVSF4S2SQcR/ZDRd2+NEW5AmSXytk\njsiahM56hf6yX+7IcVy5cRyRfdnlOHfEX87JLPZUL3DYAJ4FzQn3y4yPTz0R9V6z\n4s3tT8qIGjdwWQ76rEvUihhryxiS2YID2rWwx0W0Adln9RLXFJUtu0TTqQRHI7Jz\nyyWKBeu9TwKBgB3QviSuHvE0BMPhJishXZLkiv/HMLkOK6BgqGgmacm5d52gLBTb\nVp+1UuibmiYtmHUhwcdcMpzSZHnCYj9pRf78vEba6uuVVUIevDOckWATOGFRl69V\nMWUYVmI0sNSVu/kD8y/ZJ5f5i0VL46s9grAb3oTmPPBa6KqppZshex/hAoGANyxz\nkvO+fEsbHOBk7wsnnFJi4xx/5sTZz22ssfjhwBAO8dUpYEnrydUv/lQmGsrL3Ufm\nU6VDMNWfZaEhyZnRwOH6BlJ/f7EBvrZylh/YJOjA89w1S3CBvH/HfijN8dqEUcXB\nuQ7CUpYvdyspgRIzBSrpJx3TI8mJVYeCdxz5tK8CgYEAz99eyBvCqAFhTvg3JhMb\npP5SiDE0tPDvNnRhBMr7S+0vroRCHmDuOjJPMIhgIMs61OxhpxZ5I/t5M7nPGmUH\nZ7OcgAYR3BZZTemXEDJYktL1EFOTQmVSQeEQZZyJF3+nuM3pBQqWe0SPAS1zcOaM\n8lbtHhpm9B10UO6S6WwC8do=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tainangame@game-178317.iam.gserviceaccount.com",
+  "client_id": "112645966909335393706",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tainangame%40game-178317.iam.gserviceaccount.com"
+}
